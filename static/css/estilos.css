@@ -1,3 +1,27 @@
+.header {
+  display: flex;
+  padding: 1em 1.5em;
+  justify-content: space-between; }
+
+.hero {
+  text-align: center;
+  padding-bottom: 5em; }
+  .hero .copy {
+    margin-bottom: 2.5em; }
+  .hero__image {
+    height: 300px;
+    margin: 0 calc(-1 * var(--wrapperSpace));
+    background: url("/static/images/image-mockups.png") center bottom no-repeat, url("/static/images/bg-intro-mobile.svg") center no-repeat;
+    background-size: 345px, cover;
+    margin-bottom: 1.2em; }
+
+.menu {
+  width: 40px;
+  background: url("../../static/images/icon-hamburger.svg") no-repeat center; }
+
+.why {
+  text-align: center; }
+
 :root {
   --darkBlue: hsl(233, 26%, 24%);
   --limeGreen: hsl(136, 65%, 51%);
@@ -6,7 +30,8 @@
   --gray: hsl(220, 16%, 96%);
   --lightGray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
-  font-size: 14px; }
+  font-size: 14px;
+  --wrapperSpace: 1.5em; }
 
 body {
   margin: 0;
@@ -17,10 +42,8 @@ body {
   line-height: 1.7;
   font-size: .9em; }
 
-.hero {
-  text-align: center; }
-  .hero .copy {
-    margin-bottom: 2.5em; }
+.is-hidden {
+  display: none !important; }
 
 .title {
   border: 1px solid red; }
@@ -33,7 +56,7 @@ body {
     margin-bottom: .5em; }
 
 .wrapper {
-  padding: 0 1.5em; }
+  padding: 0 var(--wrapperSpace); }
 
 .button {
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--rightCyan) 100%);

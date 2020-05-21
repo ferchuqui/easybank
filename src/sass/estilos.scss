@@ -1,3 +1,8 @@
+@import "./header.scss";
+@import "./hero.scss";
+@import "./menu.scss";
+@import "./why.scss";
+
 :root {
   --darkBlue: hsl(233, 26%, 24%);
   --limeGreen: hsl(136, 65%, 51%);
@@ -7,6 +12,7 @@
   --lightGray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
   font-size: 14px;
+  --wrapperSpace: 1.5em;
 }
 
 body {
@@ -19,14 +25,9 @@ body {
   font-size: .9em;
   // border: 1px solid red;
 }
-.hero {
-  // border: 2px solid red;
-  text-align: center;
-  .copy {
-    margin-bottom: 2.5em;
-  }
+.is-hidden {
+  display: none !important; 
 }
-
 .title {
   border: 1px solid red;
   &__h1 {
@@ -41,7 +42,7 @@ body {
 }
 
 .wrapper {
-  padding: 0 1.5em;
+  padding: 0 var(--wrapperSpace);
 }
 
 .button {
@@ -55,5 +56,4 @@ body {
   color: var(--white);
   font-size: 1em;
   padding: .9em 2.2em;
-
 }
