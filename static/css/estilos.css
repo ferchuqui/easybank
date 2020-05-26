@@ -14,6 +14,8 @@
     background: url("/static/images/image-mockups.png") center bottom no-repeat, url("/static/images/bg-intro-mobile.svg") center no-repeat;
     background-size: 345px, cover;
     margin-bottom: 1.2em; }
+  .hero imageSrc {
+    display: none; }
 
 .menu {
   width: 40px;
@@ -57,7 +59,8 @@
       margin: 0 -2em; }
 
 .footer {
-  border: 1px solid red; }
+  background: var(--darkBlue);
+  color: var(--white); }
 
 :root {
   --darkBlue: hsl(233, 26%, 24%);
