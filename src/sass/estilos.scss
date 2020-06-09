@@ -21,6 +21,7 @@ body {
   margin: 0;
   font-family: 'Public Sans', sans-serif;
   color: var(--grayBlue)
+  // overflow-x: hidden;
 }
 .copy {
   line-height: 1.7;
@@ -30,7 +31,13 @@ body {
 .is-hidden {
   display: none !important; 
 }
-
+.wrapper {
+  padding: 0 var(--wrapperSpace);
+  max-width: calc(1115px + 1.5em);
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
 @mixin title {
   font-size: 2.5em;
   color: var(--darkBlue);
@@ -58,13 +65,10 @@ body {
   }
   &__h3 {
     @include title;
-    font-size:1.2em;
+    font-size:1em;
   }
 }
 
-.wrapper {
-  padding: 0 var(--wrapperSpace);
-}
 
 .button {
   background-image: linear-gradient(
@@ -91,14 +95,13 @@ body {
     @include icon;
     background-image: url('../../static/images/icon-facebook.svg');
   }
-  &__twitter {
-    @include icon;
-    background-image: url('../../static/images/icon-twitter.svg');
-  }
-  
   &__youtube {
     @include icon;
     background-image: url('../../static/images/icon-youtube.svg');
+  }
+  &__twitter {
+    @include icon;
+    background-image: url('../../static/images/icon-twitter.svg');
   }
   &__pinterest {
     @include icon;
