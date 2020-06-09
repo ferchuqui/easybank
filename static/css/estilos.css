@@ -63,8 +63,7 @@
       display: block;
       position: relative;
       top: -150px;
-      z-index: 1;
-      width: 50%; }
+      z-index: 1; }
     .hero__image {
       background: none;
       left: 150px;
