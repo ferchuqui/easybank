@@ -63,7 +63,8 @@
       display: block;
       position: relative;
       top: -150px;
-      z-index: 1; }
+      z-index: 1;
+      width: 50%; }
     .hero__image {
       background: none;
       left: 150px;
@@ -71,7 +72,6 @@
       top: 0; } }
 
 .menu {
-  border: 1px solid green;
   display: none;
   list-style: none;
   padding: 0;
