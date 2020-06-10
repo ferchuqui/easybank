@@ -78,7 +78,7 @@
   .menu__button {
     width: 40px;
     height: 40px;
-    background: url("/static/images/icon-hamburger.svg") no-repeat center; }
+    background: url("./static/images/icon-hamburger.svg") no-repeat center; }
   .menu a {
     text-decoration: none;
     color: var(--grayBlue);
