@@ -6,7 +6,7 @@
   &__button {
     width: 40px;
     height: 40px;
-    background: url('static/images/icon-hamburger.svg') no-repeat center;
+    background: url('../../static/images/icon-hamburger.svg') no-repeat center;
   }
   a {
     text-decoration: none;
@@ -21,7 +21,7 @@
     display: none;
     &:checked {
       & ~ .menu__button {
-        background: url('/static/images/icon-close.svg') no-repeat center;
+        background: url('../../static/images/icon-close.svg') no-repeat center;
       }
       & ~ .menu {
         display: block;

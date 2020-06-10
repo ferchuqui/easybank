@@ -11,7 +11,7 @@
     height: 300px;
     margin: 0 calc(-1 * var(--wrapperSpace));
     
-    background: url('/static/images/image-mockups.png') center bottom no-repeat, url('/static/images/bg-intro-mobile.svg') center no-repeat ;
+    background: url('../../static/images/image-mockups.png') center bottom no-repeat, url('../../static/images/bg-intro-mobile.svg') center no-repeat ;
     background-size: 345px, cover;
     margin-bottom: 1.2em;
   }
@@ -21,7 +21,7 @@
 }
   @media screen and (min-width: 768px) {
     text-align: left;
-    background: url('/static/images/bg-intro-desktop.svg') left 650px top -290px no-repeat ;
+    background: url('../../static/images/bg-intro-desktop.svg') left 650px top -290px no-repeat ;
     background-size: cover;
     min-height: 550px;
     box-sizing: border-box;
@@ -47,7 +47,7 @@
       left: 0;
       top: 0;
       height: 768px;
-      background: url('/static/images/image-mockups.png') left bottom no-repeat;
+      background: url('../../static/images/image-mockups.png') left bottom no-repeat;
       background-size: cover;
     }
 }
